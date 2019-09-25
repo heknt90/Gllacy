@@ -5,6 +5,11 @@
   <title>Главная страница | Gllacy</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <!-- Подключаем полифил, для отображения svg-спрайта в IE11 -->
+  <script type="text/javascript" src="js/svgforeverybody.js"></script>
+  <script type="text/javascript">
+    svg4everybody();
+  </script>
 </head>
 <body>
   <header class="header">
@@ -70,7 +75,7 @@
       </li>
       <li class="baners__item">
         <h3 class="banners__title">Шоколадки даром!</h3>
-        <p class="banners__text"></p>
+        <p class="banners__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  совершенно бесплатно.</p>
         <button type="button" name="button-offer" class="button button_main button_l">Хочу шоколадки!</button>
       </li>
     </ul>
