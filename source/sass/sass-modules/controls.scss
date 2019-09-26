@@ -1,0 +1,36 @@
+.button {
+  border: none;
+  text-align: center;
+}
+
+.button_main {
+  background: linear-gradient(to top, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+
+  &:hover {
+    background: linear-gradient(to top, #f58669 0%, #ec6f5e 100%);
+    box-shadow: inset 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+  }
+
+  &:active {
+    background: linear-gradient(to top, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+    box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+  }
+}
+
+.button_l {
+  padding: 10px 15px;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 20px;
+}
+
+.button_xl {
+  font-size: 32px;
+  line-height: 44px;
+  padding: 10px 42px 12px;
+  border-radius: 33px;
+}
