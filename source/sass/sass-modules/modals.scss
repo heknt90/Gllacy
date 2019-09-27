@@ -1,0 +1,134 @@
+.popup {
+  background-color: #f8f7f4;
+  display: none;
+  border-radius: 5px;
+  box-shadow: $shadow_popup;
+  color: #000;
+
+  &-menu {
+    position: absolute;
+    transform: translateY(calc(100% + 5px));
+    bottom: 0;
+
+    &:before {
+      content: '';
+      height: 5px;
+      position: absolute;
+      top: -5px;
+      left: 0; right: 0;
+    }
+
+    &_right {
+      right: 0;
+      padding: 20px;
+    }
+  }
+
+  &-container {
+    position: relative;
+
+    &:hover {
+
+      .header__button {
+        background-color: #fff;
+        color: #000;
+        border-radius: 14px;
+      }
+
+      .popup-menu  {
+        display: block!important;
+      }
+    }
+  }
+}
+
+.shopcart {
+  width: 510px;
+  padding: 20px 15px;
+
+  &__list {
+    border-bottom: 1px solid #cacac7;
+  }
+
+  &__total-cost {
+    margin: 14px 0;
+    font-weight: bold;
+    text-align: right;
+  }
+
+  &__submit {
+    display: block;
+    width: 170px;
+    margin-left: auto;
+  }
+}
+
+.shopcart-product {
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-weight: normal;
+
+  &__name,
+  &__calculation,
+  &__cost {
+    margin: 8px 0 17px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__name {
+    font-weight: normal;
+    width: 237px;
+    margin-top: 8px;
+    margin-right: 10px;
+  }
+
+  &__calculation {
+    width: 112px;
+    margin-right: 10px;
+  }
+
+  &__nominal-price {
+    color: #999999;
+  }
+
+  &__button_delete {
+    position: relative;
+    margin-top: 11px;
+    margin-right: 10px;
+    order: -2;
+    width: 11px;
+    height: 11px;
+    padding: 0;
+    background: 0;
+    border: none;
+
+    &:before, &:after {
+      position: absolute;
+      top: 4px;
+      left: -3px;
+      content: '';
+      height: 1px;
+      width: 15px;
+      background-color: #231f20;
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__cover {
+    order: -1;
+    margin-bottom: 20px;
+    margin-right: 14px;
+  }
+
+}
