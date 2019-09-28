@@ -1,46 +1,57 @@
 .promo {
   position: relative;
-}
 
-.promo__slider {
-  display: block;
-  margin: 276px 0 0;
-}
+  &__slider {
+    display: block;
+    margin: 276px 0 40px;
+  }
 
-.promo__slide {
-  display: none;
-  text-align: center;
-}
-
-.slide__title {
-  font-size: 60px;
-  line-height: 60px;
-  width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.slide__button {
-  width: 279px;
-}
-
-.slider__indicators {
-  position: absolute;
-  left: 0;
-  bottom: 22px;
-  display: flex;
-
-  li + li {
-    margin-left: 8px;
+  &__slide {
+    display: none;
+    text-align: center;
   }
 }
 
-.slider__indicator {
-  display: block;
-  width: 21px;
-  height: 21px;
-  border-radius: 50%;
-  border: 1px solid #fff;
+.slider {
+
+  &__indicators {
+    position: absolute;
+    left: 0;
+    bottom: 22px;
+    display: flex;
+
+    li + li {
+      margin-left: 8px;
+    }
+  }
+
+  &__indicator {
+    display: block;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(#fff, .4);
+    }
+  }
+}
+
+.slide {
+
+  &__title {
+    font-size: 60px;
+    line-height: 60px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__button {
+    width: 279px;
+  }
 }
 
 #promo-slider-state-1:checked ~ .site__cover .slider__indicator_1,
