@@ -21,7 +21,9 @@
     <div class="container">
       <header class="header">
         <nav class="header__navigation">
-          <img src="img/svg/logo.svg" alt="Gllacy" class="header__logo" width="154" height="64">
+          <svg width="154" height="64" class="header__logo">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
           <ul class="header__menu site-navigation">
             <li class="site-navigation__item popup-container">
               <a href="#" class="header__button site-navigation__link">Каталог</a> <!-- .header__current-page -->
@@ -220,7 +222,7 @@
   </section>
 </section>
 <section class="map">
-  <img src="img/map_900_430.jpg" alt="Как до нас добраться">
+  <!-- <img src="img/map_900_430.jpg" alt="Как до нас добраться"> -->
   <section class="contacts">
     <dl class="contacts__location">
       <dt>Адрес главного офиса и офлайн-магазина:</dt>
@@ -231,7 +233,7 @@
       <dd>8 812 450-25-25</dd>
     </dl>
     <p class="contacts__shedule">(с 10 до 20 ежедневно)</p>
-    <button type="button" name="button-feedback" class="button button_main button_l">Форма обратной связи</button>
+    <button type="button" name="button-feedback" class="button button_main button_l contacts__button">Форма обратной связи</button>
   </section>
 </section>
 <footer class="footer">
@@ -254,7 +256,10 @@
   </ul>
 
   <div class="footer__copyright">
-    <img src="img/svg/logo-htmlacademy.svg" alt="">
+    <svg width="108" height="39" class="">
+      <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+    </svg>
+    <!-- <img src="img/svg/logo-htmlacademy.svg" alt=""> -->
     Сделано в <a href="htmlacademy.ru">HTML Academy</a> © 2017
   </div>
 </footer>
