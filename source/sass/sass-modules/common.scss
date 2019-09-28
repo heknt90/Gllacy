@@ -1,5 +1,5 @@
 body {
-  background-color: $bgcolor_slide_1;
+  // background-color: $bgcolor_slide_1;
   font-family: $font_base;
   color: #fff;
   font-size: 16px;
@@ -21,6 +21,11 @@ ul {
 }
 
 .site {
+  &__cover {
+    background-repeat: no-repeat;
+    background-position: center top;
+    transition: background-image 0.5s;
+  }
 
   &__link {
     position: relative;
