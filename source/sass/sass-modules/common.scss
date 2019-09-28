@@ -30,7 +30,7 @@ ul {
 
   &__link {
     position: relative;
-    display: block;
+    display: inline-block;
     font-family: $font_title;
     text-decoration: underline;
 
@@ -148,5 +148,13 @@ ul {
 
   > *:nth-child(2n) {
     margin-left: 20px;
+  }
+}
+
+.link {
+
+  &__icon{
+    position: absolute;
+    left: -22px;
   }
 }

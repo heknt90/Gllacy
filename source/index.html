@@ -238,20 +238,44 @@
 </section>
 <footer class="footer">
   <ul class="social__list">
-    <li class="social__item"><a href="twitter.com"><span class="visually-hidden">Twitter</span></a></li>
-    <li class="social__item"><a href="instagram.com"><span class="visually-hidden">Instagram</span></a></li>
-    <li class="social__item"><a href="facebook.com"><span class="visually-hidden">Facebook</span></a></li>
-    <li class="social__item"><a href="vk.com"><span class="visually-hidden">Вконтакте</span></a></li>
+    <li class="social__item"><a href="twitter.com"><span class="visually-hidden">Twitter</span>
+      <svg width="38" height="38" class="">
+        <use xlink:href="img/sprite.svg#social-twitter"></use>
+      </svg>
+    </a></li>
+    <li class="social__item"><a href="instagram.com"><span class="visually-hidden">Instagram</span>
+      <svg width="38" height="38" class="">
+        <use xlink:href="img/sprite.svg#social-instagram"></use>
+      </svg>
+    </a></li>
+    <li class="social__item"><a href="facebook.com"><span class="visually-hidden">Facebook</span>
+      <svg width="38" height="38" class="">
+        <use xlink:href="img/sprite.svg#social-fb"></use>
+      </svg>
+    </a></li>
+    <li class="social__item"><a href="vk.com"><span class="visually-hidden">Вконтакте</span>
+      <svg width="38" height="38" class="">
+        <use xlink:href="img/sprite.svg#social-vk"></use>
+      </svg>
+    </a></li>
   </ul>
 
   <ul class="footer-navigation">
-    <li class="footer-navigation__production"> <span class="visually-hidden">Производство</span>
-      <li class="footer-navigation__item"><a href="#">Для поставщиков</a></li>
-      <li class="footer-navigation__item"><a href="#">О производстве</a></li>
+    <li> <span class="visually-hidden">Производство</span>
+      <ul class="footer-navigation__production">
+        <li class="footer-navigation__item"><a href="#" class="link site__link">
+          <svg width="15" height="13" class="link__icon">
+            <use xlink:href="img/sprite.svg#heart"></use>
+          </svg>
+          Для поставщиков</a></li>
+        <li class="footer-navigation__item"><a href="#" class="site__link">О производстве</a></li>
+      </ul>
     </li>
-    <li class="footer-navigation__docs"><span class="visually-hidden">Документация</span>
-      <li class="footer-navigation__item"><a href="#">Наши документы</a></li>
-      <li class="footer-navigation__item"><a href="#">Экологические стандарты</a></li>
+    <li><span class="visually-hidden">Документация</span>
+      <ul class="footer-navigation__docs">
+        <li class="footer-navigation__item"><a href="#" class="site__link">Наши документы</a></li>
+        <li class="footer-navigation__item"><a href="#" class="site__link">Экологические стандарты</a></li>
+      </ul>
     </li>
   </ul>
 
@@ -260,7 +284,9 @@
       <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
     </svg>
     <!-- <img src="img/svg/logo-htmlacademy.svg" alt=""> -->
-    Сделано в <a href="htmlacademy.ru">HTML Academy</a> © 2017
+    <span class="copyright__text">
+      Сделано в <a href="htmlacademy.ru" class="site__link">HTML Academy</a> © 2017
+    </span>
   </div>
 </footer>
     </div>
