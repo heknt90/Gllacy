@@ -89,15 +89,18 @@ ul {
     align-items: center;
     text-align: center;
 
+    &:before {
+      content: '';
+      position: absolute;
+      border-radius: 5px;
+      top: -10px; bottom: -80px;
+      left: -10px; right: -10px;
+    }
+
     &:hover {
 
       &:before {
-        content: '';
-        position: absolute;
         background-color: rgba(#fff, .2);
-        border-radius: 5px;
-        top: -10px; bottom: -80px;
-        left: -10px; right: -10px;
       }
 
       .products__button {
