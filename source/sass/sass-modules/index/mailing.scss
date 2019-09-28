@@ -1,0 +1,83 @@
+.mailing {
+  display: flex;
+  margin-bottom: 40px;
+
+  &__section {
+    width: 420px;
+    height: 220px;
+    flex-grow: 1;
+    border-radius: 14px;
+    color: #5a5a5a;
+    box-sizing: border-box;
+  }
+}
+
+.last-news {
+  padding: 24px 20px;
+  background-color: #fff;
+  background-image: url("../img/back-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+
+  &__title {
+    font-family: $font_title;
+    margin: 0 0 12px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__link {
+    margin: 0;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000;
+    text-decoration: underline;
+  }
+}
+
+.subscribe {
+  position: relative;
+  padding: 33px 26px;
+  background-image: url('../img/back-5.jpg');
+  background-size: cover;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    right: 6px;
+    top: 6px;
+    bottom: 6px;
+    background-color: #f8f7f4;
+    border-radius: 14px;
+    // z-index: 1;
+  }
+
+  &__text, &__form {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__text {
+    margin: 0 0 15px;
+  }
+
+  &__form {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__input {
+    flex-grow: 1;
+  }
+
+  &__submit {
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 20px;
+  }
+}

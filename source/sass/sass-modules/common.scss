@@ -143,3 +143,10 @@ ul {
     bottom: -60px;
   }
 }
+
+.two-columns {
+
+  > *:nth-child(2n) {
+    margin-left: 20px;
+  }
+}
