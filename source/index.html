@@ -45,7 +45,7 @@
               </svg>
             </button>
             <form action="https://echo.htmlacademy.ru" class="site-search__form popup popup-menu popup-menu_right">
-              <input type="text" name="site-search__input" placeholder="Что ищем?" class="input site-search__input">
+              <input type="text" name="site-search__input" placeholder="Что ищем?" class="site__input site-search__input">
             </form>
           </div>
           <ul class="user-navigation header__menu">
@@ -57,8 +57,8 @@
                 Вход
               </a>
               <form action="https://echo.htmlacademy.ru" class="sign-in__form popup popup-menu popup-menu_right">
-                <input type="mail" name="login-input__mail" placeholder="Электронная почта" class="input sign-in__input">
-                <input type="password" name="login-input__password" placeholder="Пароль" class="input sign-in__input">
+                <input type="mail" name="login-input__mail" placeholder="Электронная почта" class="site__input sign-in__input">
+                <input type="password" name="login-input__password" placeholder="Пароль" class="site__input sign-in__input">
                 <button type="submit" name="submit__sign-in" class="button button_main button_l sign-in__submit">Войти</button>
                 <p class="sign-in__other-actions">
                   <a href="#" class="site__link">Забыли пароль?</a>
@@ -216,7 +216,7 @@
     <h3 class="visually-hidden ">Подписаться</h3>
     <p class="subscribe__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
     <form action="https://echo.htmlacademy.ru" method="post" class="subscribe__form">
-      <input type="mail" name="subscribe-mail" placeholder="Электронная почта" class="subscribe__input">
+      <input type="mail" name="subscribe-mail" placeholder="Электронная почта" class="site__input subscribe__input">
       <button type="submit" name="button-subscribe" class="button button_main button_l subscribe__submit">Отправить</button>
     </form>
   </section>
@@ -288,9 +288,22 @@
       Сделано в <a href="htmlacademy.ru" class="site__link">HTML Academy</a> © 2017
     </span>
   </div>
-</footer>
     </div>
   </div>
+</footer>
+<section class="modal">
+  <section class="popup popup-feedback">
+    <h2 class="visually-hidden"></h2>
+    <b class="popup-feedback__tagline">Мы обязательно вам ответим!</b>
+    <form action="echo.htmlacademy.ru" class="popup-feedback__form">
+      <input type="text" name="popup-feedback__name" placeholder="Как вас зовут?" class="site__input" required="required">
+      <input type="mail" name="popup-feedback__mail" placeholder="Ваша почта для ответа?" class="site__input" required="required">
+      <textarea name="popup-feedback__message" placeholder="Напишите что-нибудь..." class="popup-feedback__textarea site__input" required="required"></textarea>
+      <button type="submit" name="popup-feedback__submit" class="button button_main button_l popup-feedback__submit" >Отправить</button>
+    </form>
+    <button type="button" name="popup__button-close" class="popup__button-close"><span class="visually-hidden">Закрыть окно</span></button>
+  </section>
+</section>
 
   <!-- <script type="text/javascript" src="js/script.js"></script> -->
 </body>
