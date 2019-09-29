@@ -116,6 +116,10 @@
   z-index: 100;
   display: none;
   // overflow: hidden;
+
+  &_show {
+    display: block;
+  }
 }
 
 .shopcart {
