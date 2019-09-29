@@ -2,6 +2,7 @@
   border: none;
   text-align: center;
   display: inline-block;
+  outline: none;
 }
 
 .button_main {
@@ -19,6 +20,30 @@
   &:active {
     background: linear-gradient(to top, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
     box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+  }
+}
+
+.button_transparent {
+  line-height: 32px;
+  border: 2px solid #fff;
+  background-color: rgba(255,255,255,.2);
+  color: #fff;
+  border-radius: 18px;
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
+    line-height: 36px;
+    border: none;
+  }
+
+  &:active {
+    // border: none;
+    box-shadow: inset 0px 2px 1px 0px #696969;
+    line-height: 36px;
+    border: none;
+    color: #000;
+    background-color: #fff;
   }
 }
 

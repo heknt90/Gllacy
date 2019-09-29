@@ -27,6 +27,13 @@ h1 {
 }
 
 .site {
+  &__heading {
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
   &__cover {
     background-repeat: no-repeat;
     background-position: center top;

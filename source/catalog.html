@@ -25,10 +25,10 @@
         </a>
         <ul class="header__menu site-navigation">
           <li class="site-navigation__item popup-container">
-            <a href="#" class="header__button site-navigation__link">Каталог</a> <!-- .header__current-page -->
+            <a href="#" class="header__button site-navigation__link header__current-page">Каталог</a>
             <ul class="menu-sublist popup popup-menu">
-              <li class="menu-sublist__item menu-sublist__item_distinct "><a href="#">Новинки</a></li> <!-- .header__current-page -->
-              <li class="menu-sublist__item"><a href="#">Сливочное</a></li>
+              <li class="menu-sublist__item menu-sublist__item_distinct "><a href="#">Новинки</a></li>
+              <li class="menu-sublist__item header__current-page"><a href="#">Сливочное</a></li>
               <li class="menu-sublist__item"><a href="#">Щербеты</a></li>
               <li class="menu-sublist__item"><a href="#">Фруктовый лед</a></li>
               <li class="menu-sublist__item"><a href="#">Мелорин</a></li>
@@ -115,11 +115,89 @@
         <li class="breadcrumbs__item">Сливочное</li>
       </ul>
     </header>
-    <h1>Сливочное мороженое</h1>
+    <h1 class="site__heading">Сливочное мороженое</h1>
 
     <aside class="filters">
-      <form class="filters__form" action="echo.htmlacademy.ru" method="get">
+      <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="filters__group filters__select-wrap">
+          <h3 class="filters__heading">Сортировка:</h3>
+          <select class="filters__select" name="sort">
+            <option value="by-popular">по популярности</option>
+            <option value="by-less-cost">сначала недорогие</option>
+            <option value="by-large-cost">сначала дорогие</option>
+            <option value="by-fat-count">по жирности</option>
+          </select>
+        </fieldset>
 
+        <fieldset class="filters__group">
+          <h3 class="filters__heading">Цена: <span class="filters__price_min">100</span> руб. - <span class="filters__price_max">500</span> руб.</h3>
+
+
+          <!-- Проблема доступности ползунков
+        заменить filters__price_min и  filters__price_max на input'ы ? -->
+          <div class="range">
+            <div class="range__selected">
+              <button class="range__handle range__handle_min"></button>
+              <button class="range__handle range__handle_max"></button>
+            </div>
+          </div>
+
+        </fieldset>
+
+        <fieldset class="filters__group">
+          <h3 class="filters__heading">Жирность:</h3>
+          <input type="radio" name="fat__radio-button" value="zero" id="fat__radio-button_zero" class="visually-hidden filters__radio" checked="checked">
+          <label for="fat__radio-button_zero" class="filters__toggle">
+            <span class="radio-button__indicator"></span>
+            0%
+          </label>
+          <input type="radio" name="fat__radio-button" value="less_ten" id="fat__radio-button_less-10" class="visually-hidden filters__radio">
+          <label for="fat__radio-button_less-10" class="filters__toggle">
+            <span class="radio-button__indicator"></span>
+            до 10%
+          </label>
+          <input type="radio" name="fat__radio-button" value="less_30" id="fat__radio-button_less-30" class="visually-hidden filters__radio">
+          <label for="fat__radio-button_less-30" class="filters__toggle">
+            <span class="radio-button__indicator"></span>
+            до 30%
+          </label>
+          <input type="radio" name="fat__radio-button" value="more_30" id="fat__radio-button_more-30" class="visually-hidden filters__radio">
+          <label for="fat__radio-button_more-30" class="filters__toggle">
+            <span class="radio-button__indicator"></span>
+            выше 30%
+          </label>
+        </fieldset>
+
+        <fieldset class="filters__group">
+          <h3 class="filters__heading">Наполнители:</h3>
+          <input type="checkbox" name="optional__chechbox" value="chocolate-bits" id="optional__chechbox_chocolate-bits" class="visually-hidden filters__checkbox" checked="checked">
+          <label for="optional__chechbox_chocolate-bits" class="filters__toggle">
+            <span class="checkbox__indicator"></span>
+            шоколадные
+          </label>
+          <input type="checkbox" name="optional__chechbox" value="sugare-bits" id="optional__chechbox_sugare-bits" class="visually-hidden filters__checkbox">
+          <label for="optional__chechbox_sugare-bits" class="filters__toggle">
+            <span class="checkbox__indicator"></span>
+            сахарные присыпки
+          </label>
+          <input type="checkbox" name="optional__chechbox" value="fruits-bits" id="optional__chechbox_fruits-bits" class="visually-hidden filters__checkbox">
+          <label for="optional__chechbox_fruits-bits" class="filters__toggle">
+            <span class="checkbox__indicator"></span>
+            фрукты
+          </label>
+          <input type="checkbox" name="optional__chechbox" value="syrup" id="optional__chechbox_syrup" class="visually-hidden filters__checkbox">
+          <label for="optional__chechbox_syrup" class="filters__toggle">
+            <span class="checkbox__indicator"></span>
+            сиропы
+          </label>
+          <input type="checkbox" name="optional__chechbox" value="jam" id="optional__chechbox_jam" class="visually-hidden filters__checkbox">
+          <label for="optional__chechbox_jam" class="filters__toggle">
+            <span class="checkbox__indicator"></span>
+            джемы
+          </label>
+        </fieldset>
+
+        <button type="submit" name="button-filters-submit" class="button button_transparent filters__submit">Применить</button>
       </form>
     </aside>
 
