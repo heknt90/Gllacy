@@ -21,6 +21,11 @@ ul {
   padding-left: 0;
 }
 
+h1 {
+  font-size: 35px;
+  line-height: 41px;
+}
+
 .site {
   &__cover {
     background-repeat: no-repeat;
@@ -88,6 +93,7 @@ ul {
     flex-shrink: 0;
     align-items: center;
     text-align: center;
+    // z-index: -1;
 
     &:before {
       content: '';
@@ -98,6 +104,7 @@ ul {
     }
 
     &:hover {
+      z-index: 1;
 
       &:before {
         background-color: rgba(#fff, .2);
@@ -106,11 +113,17 @@ ul {
       .products__button {
         display: block;
       }
+
+      .products__cover,
+      .products__title,
+      .products__price {
+        position: relative;
+        z-index: 20;
+      }
     }
   }
 
   &__cover {
-    position: relative;
     width: 100%;
     height: auto;
   }
@@ -156,5 +169,33 @@ ul {
   &__icon{
     position: absolute;
     left: -22px;
+  }
+}
+
+.breadcrumbs {
+
+  &__list {
+    display: flex;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: $font_base;
+  }
+
+  &__item {
+
+    &:not(:first-of-type) {
+      position: relative;
+      margin-left: 22px;
+
+      &:before {
+        content: "»";
+        position: absolute;
+        left: -14px;
+      }
+    }
   }
 }
