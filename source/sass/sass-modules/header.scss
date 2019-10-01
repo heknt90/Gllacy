@@ -62,11 +62,13 @@
 .menu-sublist {
   left: -7px;
   padding: 5px 0 7px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
 
   &__item {
     padding: 5px 21px 7px;
     margin-bottom: 4px;
-    font-weight: normal;
     white-space: nowrap;
     color: #000;
 
@@ -138,9 +140,12 @@
 }
 
 .user-navigation {
+  font-size: 14px;
+  line-height: 16px;
 
   &__item {
     margin-left: 10px;
+    font-family: $font_title;
   }
 }
 

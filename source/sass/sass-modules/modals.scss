@@ -9,8 +9,12 @@
 
   &-menu {
     position: absolute;
-    transform: translateY(calc(100% + 5px));
+    transform: translateY(100%) translateY(5px);
     bottom: 0;
+
+    .site__input {
+      font-size: 14px;
+    }
 
     &:before {
       content: '';
@@ -119,6 +123,10 @@
 
   &_show {
     display: block;
+  }
+
+  &Wrap_show {
+    display: flex;
   }
 }
 

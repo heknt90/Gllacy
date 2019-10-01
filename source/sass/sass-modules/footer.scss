@@ -10,6 +10,17 @@
 
   &-navigation {
     display: flex;
+    font-family: $font_base;
+
+    &__item {
+      font-family: $font_base;
+      font-weight: normal;
+
+      .site__link_bold {
+        font-weight: bold;
+        font-family: $font_base;
+      }
+    }
 
     &__docs {
       margin-left: 32px;
